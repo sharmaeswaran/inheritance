@@ -1,0 +1,25 @@
+<script>
+    class person{
+        constructor(name,age){
+            this.name=name;
+            this.age=age;
+        }
+        introduce(){
+            console.log(`hello, my is ${this.name} and im am ${this.age} year old.`);
+        }
+    }
+
+
+    class teacher extends person{
+        constructor(name,age,subject){
+            super(name,age);
+            this.subject=subject;
+        }
+        introduce(){
+            console.log(`hello, my name is${this.name}, i am ${this.age} year old, and i teach ${this.subject}.`);
+        }
+    }
+
+    let teacher1 = new teacher("arun",22,"mathematics");
+    teacher1.introduce();
+</script>
